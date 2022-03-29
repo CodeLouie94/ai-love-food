@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ai Love Food</title>
+</head>
+<body>
+
+    <div class="header">
+        <img src="images/gif_icon" id="home-icon" alt="" onmouseover="resizePic(this, '160px')" onmouseout="resizePic(this, '150px')">
+        <h1>Ai Love Food</h1>
+        <div class="button-tabs">
+            <button class="header-button" onmouseover="enlarge(this, 'solid white 6px')" onmouseout="enlarge(this, 'solid white 3px')">Community Rules</button>
+            <button class="header-button" onmouseover="enlarge(this, 'solid white 6px')" onmouseout="enlarge(this, 'solid white 3px')">Dei Commitment</button>
+            <button class="header-button" onmouseover="enlarge(this, 'solid white 6px')" onmouseout="enlarge(this, 'solid white 3px')">Staff bios</button>
+            <button class="header-button" onmouseover="enlarge(this, 'solid white 6px')" onmouseout="enlarge(this, 'solid white 3px')">Reviews</button>
+        </div>
+    </div>
+
+<div class="hometab">
+
+    <div class="welcome-description">
+        <p id="welcome">Welcome to our Community!</p>
+        <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, cupiditate voluptatum, non possimus deleniti molestias tempore repudiandae, ex iure unde voluptatem blanditiis minima cumque incidunt praesentium magni enim iusto natus quibusdam? Harum quo, accusantium tempore perferendis non illum quam soluta, optio eum error omnis dolores architecto laboriosam nobis, consectetur voluptatum?</p>
+    </div>
+
+    <div class="widget"><iframe  src="https://discord.com/widget?id=368979036153708544&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
+
+    <h2 class="gallery">Some pictures of the food we have:</h2>
+    <div class="carousel">
+        <button onclick="previousImage()" onmouseover="resize(this, '210pt')" onmouseout="resize(this, '190pt')" class="arrows"><</button>
+        <div>
+            <img src="images/foodpics/bepper.png" alt="" class="food-pic" id="food1">
+            <h2 class="foodpic-name">Bepper<h2>
+        </div>
+        <div>
+            <img src="images/foodpics/ai.jpg" alt="" class="food-pic" id="food2">
+            <h2 class="foodpic-name">Ai</h2>
+        </div>
+        <div id="3rdpic">
+            <img src="images/foodpics/@satanesse_tiktok-@bellene_ig.png" alt="" class="food-pic" id="food3">
+            <h2 class="foodpic-name">@satanesse(tiktok)/@bellene(instagram)</h2>
+        </div>
+        <button onclick="nextImage()" onmouseover="resize(this, '210pt')" onmouseout="resize(this, '190pt')" class="arrows">></button>
+    </div>
+
+    
+</div>
+
+
+<div id="bottom-space"></div>
+<script src="script.js"></script>
+</body>
+</html>
