@@ -9,43 +9,151 @@
 </head>
 <body>
 
+    <div class="mug">
+        <a href="file:///C:/Users/louie/Desktop/Projects/Ariel-Project/index.html"><img src="images/gif_icon" id="home-icon" alt="" onmouseover="resizePic(this, '220px')" onmouseout="resizePic(this, '200px')"></a>
+    </div>
+
     <div class="header">
-        <img src="images/gif_icon" id="home-icon" alt="" onmouseover="resizePic(this, '160px')" onmouseout="resizePic(this, '150px')">
-        <h1>Ai Love Food</h1>
-        <div class="button-tabs">
-            <button class="header-button" onmouseover="enlarge(this, 'solid white 6px')" onmouseout="enlarge(this, 'solid white 3px')">Community Rules</button>
-            <button class="header-button" onmouseover="enlarge(this, 'solid white 6px')" onmouseout="enlarge(this, 'solid white 3px')">Dei Commitment</button>
-            <button class="header-button" onmouseover="enlarge(this, 'solid white 6px')" onmouseout="enlarge(this, 'solid white 3px')">Staff bios</button>
-            <button class="header-button" onmouseover="enlarge(this, 'solid white 6px')" onmouseout="enlarge(this, 'solid white 3px')">Reviews</button>
+        <div class="button-tabs" id="left-tabs">
+            <button class="header-button" onmouseover="enlarge(this, 'solid rgb(119, 7, 7) 6px')" onmouseout="enlarge(this, 'solid rgb(119, 7, 7) 3px')">Community Rules</button>
+            <button class="header-button" onmouseover="enlarge(this, 'solid rgb(119, 7, 7) 6px')" onmouseout="enlarge(this, 'solid rgb(119, 7, 7) 3px')">Dei Commitment</button>
+        </div>
+        <div class ="button-tabs" id="right-tabs">
+            <button class="header-button" onmouseover="enlarge(this, 'solid rgb(119, 7, 7) 6px')" onmouseout="enlarge(this, 'solid rgb(119, 7, 7) 3px')">Staff bios</button>
+            <button class="header-button" onmouseover="enlarge(this, 'solid rgb(119, 7, 7) 6px')" onmouseout="enlarge(this, 'solid rgb(119, 7, 7) 3px')">Reviews</button>
         </div>
     </div>
-
 <div class="hometab">
 
-    <div class="welcome-description">
-        <p id="welcome">Welcome to our Community!</p>
-        <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, cupiditate voluptatum, non possimus deleniti molestias tempore repudiandae, ex iure unde voluptatem blanditiis minima cumque incidunt praesentium magni enim iusto natus quibusdam? Harum quo, accusantium tempore perferendis non illum quam soluta, optio eum error omnis dolores architecto laboriosam nobis, consectetur voluptatum?</p>
+    <div class="hometab-top">
+        <div class="welcome-description">
+            <p id="welcome">Welcome to our Community!</p>
+            <p id="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, cupiditate voluptatum, non possimus deleniti molestias tempore repudiandae, ex iure unde voluptatem blanditiis minima cumque incidunt praesentium magni enim iusto natus quibusdam? Harum quo, accusantium tempore perferendis non illum quam soluta, optio eum error omnis dolores architecto laboriosam nobis, consectetur voluptatum?</p>
+        </div>
+        <div class="widget"><iframe  src="https://discord.com/widget?id=368979036153708544&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
     </div>
 
-    <div class="widget"><iframe  src="https://discord.com/widget?id=368979036153708544&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe></div>
-
     <h2 class="gallery">Some pictures of the food we have:</h2>
-    <div class="carousel">
-        <button onclick="previousImage()" onmouseover="resize(this, '210pt')" onmouseout="resize(this, '190pt')" class="arrows"><</button>
+    <br>
+    <br>
+    <!-- <div class="carousel">
+        <button onclick="previousImage()" onmouseover="resize(this, 'bold')" onmouseout="resize(this, 'normal')" id="arrow-left"><</button>
         <div>
             <img src="images/foodpics/bepper.png" alt="" class="food-pic" id="food1">
-            <h2 class="foodpic-name">Bepper<h2>
+            <h2 class="foodpic-name" id="foodName1">Bepper<h2>
         </div>
         <div>
             <img src="images/foodpics/ai.jpg" alt="" class="food-pic" id="food2">
-            <h2 class="foodpic-name">Ai</h2>
+            <h2 class="foodpic-name" id="foodName2">Ai</h2>
         </div>
-        <div id="3rdpic">
+        <div>
             <img src="images/foodpics/@satanesse_tiktok-@bellene_ig.png" alt="" class="food-pic" id="food3">
-            <h2 class="foodpic-name">@satanesse(tiktok)/@bellene(instagram)</h2>
+            <h2 class="foodpic-name" id="foodName3">@satanesse(tiktok)/@bellene(instagram)</h2>
         </div>
-        <button onclick="nextImage()" onmouseover="resize(this, '210pt')" onmouseout="resize(this, '190pt')" class="arrows">></button>
+        <button onclick="nextImage()" onmouseover="resize(this, 'bold')" onmouseout="resize(this, 'normal')" class="arrows" id="arrow-right">></button>
+    </div> -->
+
+    <div class="test-carousel">
+        <div class="slider">
+            <div class="slides">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+            
+                <div class="slide first">
+                    <div>
+                        <img src="images/foodpics/@satanesse_tiktok-@bellene_ig.png" alt="">
+                        <p>@satanesse (Tiktok) / @bellene (Instagram))</p>
+                    </div>
+                    <div>
+                        <img src="images/foodpics/disc_banana_cthulhu.png" alt="">
+                        <p>banana cthulhu (Discord)</p>
+                    </div>
+                    <div>
+                        <img src="images/foodpics/ai2.jpg" alt="">
+                        <p>Ai</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div>
+                        <img src="images/foodpics/bepper.png" alt="">
+                        <p>Bepper</p>
+                    </div>
+                    <div>
+                        <img src="images/foodpics/ai.jpg" alt="">
+                        <p>Ai</p>
+                    </div>
+                    <div>
+                        <img src="images/foodpics/disc_Gemyma.png" alt="">
+                        <p>Gemyma (Discord)</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div>
+                        <img src="images/foodpics/ig_@_gastron3rd.png" alt="">
+                        <p>@_gastron3rd (Instagram)</p>
+                    </div>
+                    <div>
+                        <img src="images/foodpics/Ig_@a_crouton_.png" alt="">
+                        <p>@a_crouton_ (Instagram)</p>
+                    </div>
+                    <div>
+                        <img src="images/foodpics/ig_@claude_covet.png" alt="">
+                        <p>@claude_covet (Instagram)</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div>
+                        <img src="images/foodpics/ig_@hxf.baking.png" alt="">
+                        <p>@hxf.baking (instagram)</p>
+                    </div>
+                    <div>
+                        <img src="images/foodpics/ig_@tnguyen363.png" alt="">
+                        <p>@tnguyen363 (Instagram)</p>
+                    </div>
+                    <div>
+                        <img src="images/foodpics/jem.png" alt="">
+                        <p>jem#4226 (Discord)</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div>
+                        <img src="images/foodpics/Mexico.png" alt="">
+                        <p>Mexico#9235 (Discord)</p>
+                    </div>
+                    <div>
+                        <img src="images/foodpics/Nusantara.png" alt="">
+                        <p>Nusantara#6064 (Discord) / @jramran_01 (Instagram)</p>
+                    </div>
+                    <div>
+                        <img src="images/foodpics/disc_Bunnerz.png" alt="">
+                        <p>Bunnerz (Discord)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+                <div class="auto-btn5"></div>
+            </div>
+            <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+            </div>
+        </div>
     </div>
+
+
+
+
+
 
     
 </div>
