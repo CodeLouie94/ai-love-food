@@ -58,50 +58,9 @@ body{
 }
 
 
-.food-pic{
-    display: block;
-    width: 400px;
-    height: 300px;
-    
-    margin-left: 25px;
-    margin-right: 25px;
-}
-
-.carousel{
-    display: flex;
-    justify-content: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin-left: 30px;
-    margin-right: 30px;
-    background-color: rgba(255, 255, 255, 0.24);
-    border-radius: 5%;
-}
-
-.foodpic-name{
-    color: rgb(119, 7, 7);
-    text-align: center;
-}
-
-#arrow-left{
-    color: rgb(119, 7, 7);
-    font-size: 150pt;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0);
-    border: 0ch;
-}
-#arrow-right{
-    color: rgb(119, 7, 7);
-    font-size: 150pt;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0);
-    border: 0ch;
-    
-}
 
 
 .hometab-top{
-    /* background-color: rgba(148, 20, 20, 0.425); */
     border-radius: 5%;
     padding-top: 5px;
     padding-bottom: 30px;
@@ -120,6 +79,10 @@ body{
     font-size: 20pt;
     margin-left: 60px;
     margin-right:60px;
+}
+
+.hometab h2{
+    margin-bottom: 50px;
 }
 
 .gallery{
@@ -141,9 +104,6 @@ body{
     margin-top: 65px;
 }
 
-
-
-/* test carousel ################################################ */
 
 .test-carousel{
     display: flex;
@@ -179,6 +139,7 @@ body{
 
 .slides input{
     display:none;
+
 }
 
 .slide p{
@@ -189,10 +150,10 @@ body{
 
 .navigation-manual{
     position:absolute;
-    width: 800px;
     margin-top: -40px;
     display: flex;
     justify-content: center;
+    margin-left: 650px;
 }
 
 .manual-btn{
@@ -201,6 +162,7 @@ body{
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
+    
 }
 
 .manual-btn:not(:last-child){
@@ -225,4 +187,40 @@ body{
 }
 #radio5:checked ~ .first{
     margin-left: -81.3%;
+}
+
+.navigation-auto{
+    position:absolute;
+    display:flex;
+    justify-content: center;
+    margin-left: 650px;
+    margin-top: -40px
+}
+
+
+.navigation-auto div{
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: black;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+    background: black;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+    background: black;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+    background: black;
+}
+#radio5:checked ~ .navigation-auto .auto-btn5{
+    background: black;
 }
