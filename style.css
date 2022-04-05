@@ -5,31 +5,29 @@
 }
 
 body{
-    background: url(images/background_full_mock.png) no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(images/background_full_mock2.png);
+    background-size: 100% 100%;
+    background-attachment: fixed;
 }
 
 .mug{
     padding-top: 50px;
     text-align: center;
     margin: 0, auto;
-    
+    padding-bottom: 0px;
 }
 
 #home-icon{
     width: 200px;
     height: 200px;
-    
 }
 
 .header{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin: 180px;
+    margin-top: -80px;
+    margin-bottom: 0px;
 }
 
 
@@ -51,23 +49,19 @@ body{
     font-size: medium;
     width: 150px;
     background-color: rgba(255, 255, 255, 0);
-    color: rgb(119, 7, 7);
-    border: solid rgb(119, 7, 7) 3px;
-    height: 50px;
-    
+    color: rgb(191, 8, 8);
+    border: solid rgb(191, 8, 8) 3px;
+    height: 50px;   
 }
-
-
-
 
 .hometab-top{
     border-radius: 5%;
-    padding-top: 5px;
-    padding-bottom: 30px;
+    margin: 50px 180px 180px 180px;
+    background-color: rgba(238, 238, 238, 0.365);
 }
 
 .welcome-description{
-    color: rgb(119, 7, 7);
+    color: rgb(191, 8, 8);
 }
 
 #welcome{
@@ -76,7 +70,7 @@ body{
 }
 
 #description{
-    font-size: 20pt;
+    font-size: 18pt;
     margin-left: 60px;
     margin-right:60px;
 }
@@ -93,9 +87,6 @@ body{
     text-align: center;
 }
 
-#bottom-space{
-    height: 250px;
-}
 
 .widget{
     display: flex;
@@ -139,7 +130,6 @@ body{
 
 .slides input{
     display:none;
-
 }
 
 .slide p{
@@ -157,6 +147,8 @@ body{
 }
 
 .manual-btn{
+    width: 1em;
+    height: 1em;
     border: 2px solid red;
     padding: 5px;
     border-radius: 10px;
@@ -170,7 +162,7 @@ body{
 }
 
 .manual-btn:hover{
-    background: black
+    background: red
 }
 
 #radio1:checked ~ .first{
@@ -199,6 +191,8 @@ body{
 
 
 .navigation-auto div{
+    width: 1em;
+    height: 1em;
     border: 2px solid red;
     padding: 5px;
     border-radius: 10px;
@@ -208,6 +202,8 @@ body{
 .navigation-auto div:not(:last-child){
     margin-right: 40px;
 }
+
+
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
     background: black;
