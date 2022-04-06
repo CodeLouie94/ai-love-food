@@ -7,7 +7,7 @@ function enlarge(elem, change) {
 }
 
 function resizePic(elem, change) {
-    elem.style.width = change;
+    elem.style.height = change;
 }
 
 var counter = 1;
@@ -18,3 +18,4 @@ setInterval(function(){
         counter =1;
     }
 }, 5000);
+
